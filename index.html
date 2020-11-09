@@ -1,50 +1,132 @@
-
 <!doctype html>
 <html class="" lang="en">
 
 <head>
   <meta charset="utf-8">
 
-  <title>Week 6, Part 1</title>
+  <title>Week 6, Part 2</title>
 
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
 
+
+  <style>
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
+  </style>
+  <!-- Custom styles for this template -->
+  <link href="css/product.css" rel="stylesheet">
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/styles.css">
 
 </head>
 
 <body>
-  <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
-    <header class="masthead mb-auto">
-      <div class="inner">
-        <h3 class="masthead-brand">Here's some images:</h3>
-        <nav class="nav nav-masthead justify-content-center nobutton">
-          <a class="nav-link active text-danger" href="#">No!</a>
-        </nav>
-      </div>
-    </header>
+  <nav class="site-header sticky-top py-1">
+    <div class="container d-flex flex-column flex-md-row justify-content-between">
+      <a class="py-2" href="#" aria-label="Product">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="d-block mx-auto" role="img" viewBox="0 0 24 24" focusable="false">
+          <title>Product</title>
+          <circle cx="12" cy="12" r="10" />
+          <path d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94" />
+        </svg>
+      </a>
+      <a class="py-2 d-none d-md-inline-block" href="#">Buy it now</a>
+      <a class="py-2 d-none d-md-inline-block" href="#">Product</a>
+      <a class="py-2 d-none d-md-inline-block" href="#">Factories</a>
+      <a class="py-2 d-none d-md-inline-block" href="#">Retail</a>
+      <a class="py-2 d-none d-md-inline-block" href="#">Support</a>
+      <a class="py-2 d-none d-md-inline-block" href="#">Pricing</a>
+      <a class="py-2 d-none d-md-inline-block" href="#">Cart</a>
+    </div>
+  </nav>
 
-    <main class="inner cover">
-      <div class="block"></div>
-      <div class="full-img">
-        <img class="displayed-img img-fluid" src="images/pic1.jpg" alt="first photo" >
-        <div class="overlay"></div>
-        <button class="dark btn-warning">Darken</button>
-      </div>
-      <div class="thumb-bar">
-
-
-      </div>
-    </main>
-
-    <footer class="mastfoot mt-auto">
-      <div class="inner">
-        <p></p>
-      </div>
-    </footer>
+  <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">
+    <div class="col-md-5 p-lg-5 mx-auto my-5 py-5 stackTop">
+      <h1 class="display-4 font-weight-bold para1">IT'S HERE</h1>
+      <p class="h-1 display-4 font-weight-bold para2">IT'S HOT</h1>
+      <p class="h-1 display-4 font-weight-bold para3">IT'S SEXY</h1>
+      <p class="h-1 display-4 font-weight-bold para4">IT'S MYSTERIOUS</h1>
+      <p class="lead font-weight-bold para5">It's Carlson's new mystery drink. An exclusivity only for <span>YOU</span></p>
+      <button class="btn btn-danger btn-switch" data-toggle="modal" data-target=".bd-example-modal-lg">WHAT IS IT?</button>
+    </div>
+    <img src="images/Hidden.jpg" class="img-fluid bottleHidden shadow-sm">
   </div>
+
+  <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+      <div class="modal-content">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <div class="modal-body">
+          <img src="images/FishOil.jpg" class="img-fluid  shadow-sm">
+          <div class="text-warning">
+
+            <h2 class="display-4 font-weight-bold text-center">IT'S FISH OIL BABY</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="container py-5">
+    <div class="row">
+      <div class="col-12 col-md">
+        <small class="d-block mb-3 text-muted">&copy; 2017-2020</small>
+      </div>
+      <div class="col-6 col-md">
+        <h5>The Drink</h5>
+        <ul class="list-unstyled text-small">
+          <li><a class="text-muted" href="#">What is it?</a></li>
+          <li><a class="text-muted" href="#">Where is it made?</a></li>
+          <li><a class="text-muted" href="#">Who can sell it to me?</a></li>
+          <li><a class="text-muted" href="#">Is it legal?</a></li>
+          <li><a class="text-muted" href="#">Is it really legal?</a></li>
+          <li><a class="text-muted" href="#">Oh no!</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-md">
+        <h5>Retailers</h5>
+        <ul class="list-unstyled text-small">
+          <li><a class="text-muted" href="#">Local</a></li>
+          <li><a class="text-muted" href="#">International</a></li>
+          <li><a class="text-muted" href="#">Transnational</a></li>
+          <li><a class="text-muted" href="#">Hidden</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-md">
+        <h5>Resources</h5>
+        <ul class="list-unstyled text-small">
+          <li><a class="text-muted" href="#">Business</a></li>
+          <li><a class="text-muted" href="#">Education</a></li>
+          <li><a class="text-muted" href="#">Government</a></li>
+          <li><a class="text-muted" href="#">Gaming</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-md">
+        <h5>About</h5>
+        <ul class="list-unstyled text-small">
+          <li><a class="text-muted" href="#">Team</a></li>
+          <li><a class="text-muted" href="#">Locations</a></li>
+          <li><a class="text-muted" href="#">Privacy</a></li>
+          <li><a class="text-muted" href="#">Terms</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="js/bootstrap.min.js"></script>

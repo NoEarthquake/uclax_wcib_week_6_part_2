@@ -1,45 +1,39 @@
-const displayedImage = document.querySelector('.displayed-img');
-const thumbBar = document.querySelector('.thumb-bar');
-
+const bottleHidden = document.querySelector('.bottleHidden');
 const btn = document.querySelector('button');
-const overlay = document.querySelector('.overlay');
+const reloadButton = document.querySelector('.reloadbutton');
 
-const noButton = document.querySelector('.nobutton');
+const para1 = document.querySelector('.para1');
+const para2 = document.querySelector('.para2');
+const para3 = document.querySelector('.para3');
+const para4 = document.querySelector('.para4');
+const para5 = document.querySelector('.para5');
+const stack = document.querySelector('.stackTop');
 
-/* Looping through images */
-
-for (let i = 1; i <= 5; i++) {
-  const newImage = document.createElement('img');
-  newImage.setAttribute('src', 'images/pic' + i + '.jpg');
-  thumbBar.appendChild(newImage);
-  newImage.onclick = function(e) {
-    displayedImage.src = e.target.src;
-  }
-}
-
-/* Wiring up the Darken/Lighten button */
 
 btn.onclick = function() {
   const btnClass = btn.getAttribute('class');
-  if (btnClass === 'dark btn-warning') {
-    btn.setAttribute('class', 'light btn-warning');
-    btn.textContent = 'Lighten';
-    overlay.style.backgroundColor = 'rgba(0,0,0,0.5)';
+  if (btnClass === 'btn btn-danger btn-switch') {
+    btn.setAttribute('class', 'btn btn-danger btn-switched');
+    stack.setAttribute('class', 'col-md-5 p-lg-5 mx-auto my-5 py-5 stackTop transl');
+    para1.innerHTML = "IT'S FISH OIL";
+    para2.innerHTML = 'OH YES';
+    para3.innerHTML = 'OH YES';
+    para4.innerHTML = 'OH YES';
+    para5.innerHTML = "It's what you've always wanted";
+    console.log(para1);
+    btn.textContent = 'I HATE THIS!';
+    btn.setAttribute('data-toggle', 'modal');
+    bottleHidden.src = "images/FishOil.jpg";
   } else {
-    btn.setAttribute('class', 'dark btn-warning');
-    btn.textContent = 'Darken';
-    overlay.style.backgroundColor = 'rgba(0,0,0,0)';
+    btn.setAttribute('class', 'btn btn-danger btn-switch');
+    stack.setAttribute('class', 'col-md-5 p-lg-5 mx-auto my-5 py-5 stackTop');
+    para1.innerHTML = "IT'S HERE";
+    para2.innerHTML = "IT'S HOT";
+    para3.innerHTML = "IT'S SEXY";
+    para4.innerHTML = "IT'S MYSTERIOUS";
+    para5.innerHTML = "It's Carlson's new mystery drink. An exclusivity only for <span>YOU</span>";
+    btn.textContent = 'WHAT IS IT?';
+    btn.setAttribute('data-toggle','');
+    bottleHidden.src = "images/Hidden.jpg";
   }
-}
-
-noButton.onclick = function() {
-  location.reload();
-}
-
-window.onload = overlayFit;
-window.onresize = overlayFit;
-
-function overlayFit() {
-  overlay.style.width = displayedImage.clientWidth + 'px';
-  overlay.style.height = displayedImage.clientHeight + 'px';
 }
