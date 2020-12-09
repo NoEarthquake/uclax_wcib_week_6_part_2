@@ -39,3 +39,39 @@
   background-color: transparent !important;
 
 }
+
+.site-header {
+  a{
+    color: gold;
+    text-shadow: black 1px 1px ;
+  }
+  a:hover{
+    text-shadow: gold 1px 1px;
+    font-weight: 700;
+    text-decoration: underline;
+  }
+}
+
+body{
+  background-color: black;
+}
+
+footer{
+
+    h5{
+    color: gold !important;
+  }
+}
+
+img{
+  transition: 0.4s;
+}
+
+.display-4{
+  text-shadow: 2px 3px 6px black;
+  transition: 0.4s;
+}
+
+.display-4:hover {
+  transform: translate(4px, 4px);
+}
